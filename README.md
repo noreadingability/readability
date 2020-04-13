@@ -26,6 +26,8 @@ library/book/時の凱歌.txt.morphdata
 python3 server.py
 ```
 
+![demo](static/demo.gif)
+
 * **raw_analysis**: looks into one folder, extracts the morphs for every text file of the folder and makes an evaluation. It presents the results, and the files it looked into.
 ```
 $ python3 main.py raw_analysis known.db folder_with_subtitles
