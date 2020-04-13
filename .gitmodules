@@ -1,0 +1,3 @@
+[submodule "deps/MorphMan"]
+	path = deps/MorphMan
+	url = https://github.com/kaegi/MorphMan
