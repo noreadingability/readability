@@ -9,7 +9,9 @@ A nice distant idea would be an online cloud service/database, where any user co
 
 3. The reason for the **morphdata** type is to save on time when evaluating large lists of titles. (And still, it is quite slow over large collections).
 
-4. If trying to use the server.py, one has to put all collections (in morphdata type) in the folder **library** (or link it there). I'll try to be updating this library [Link](asd). It was an automated job with scraping all subs from the japanese shows on **kitsunekko net** nad using the **generate_collection_morphs** command.
+4. If trying to use the server.py, one has to put all collections (in morphdata type) in the folder **library** (or link it there)
+5. [library.zip](https://mega.nz/file/4g01DQhC#HFjj8kigRwphNPvNXnPwVx5ZCHsF5KcosO4giZopkek) I'll be trying to update this library once in a while. Feel free to help here. This was an automated job, scraping all subs from the japanese shows on kitsunekko andd using the **generate_collection_morphs** command.
+
 ```
 library/
 library/anime/
