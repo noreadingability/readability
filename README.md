@@ -4,11 +4,12 @@ Evaluates the readability level of one or more titles. It uses **known.db** from
 
 A nice distant idea would be an online cloud service/database, where any user could submit their own known.db and get recommendation of titles based on their level. Study plans too?
 ### Some Considerations
-1. All the evaluations are handled over unique instances. So if there are  **2 known and equal** lines in a total of 3 lines, the end result would actually be 50%. Same applies to morphs.
+1. Requires ```python3.8``` - ```pip install -r requirements.txt```
+2. All the evaluations are handled over unique instances. So if there are  **2 known and equal** lines in a total of 3 lines, the end result would actually be 50%. Same applies to morphs.
 
-2. The reason for **morphdata** type is to save on time when evaluating large lists of titles. (And still, it is quite slow over large collections)/
+3. The reason for the **morphdata** type is to save on time when evaluating large lists of titles. (And still, it is quite slow over large collections).
 
-3. If one wishes to use the server.py, one has to put all collections (in morphdata) in the folder **library** (or link it there). I'll try to be updating this library [Link](asd). In the repo there are two titles as an example. It was an automated job with scraping all subs from the japanese shows on **kitsunekko net** nad using the **generate_collection_morphs** command.
+4. If trying to use the server.py, one has to put all collections (in morphdata type) in the folder **library** (or link it there). I'll try to be updating this library [Link](asd). It was an automated job with scraping all subs from the japanese shows on **kitsunekko net** nad using the **generate_collection_morphs** command.
 ```
 library/
 library/anime/
@@ -17,10 +18,10 @@ library/book/
 library/book/時の凱歌.txt.morphdata
 ```
 
-4. Again, large libraries do take a bit of time, depending on the size.
+5. Again, large libraries do take a bit of time, depending on the size.
 
 ### Available commands:
-* **server.py** : serves a local page where one can submit their **known_db** and have an evaluation over the total library. It comes with a table with basic sorting and filtering capabilities. (Check point 3. from before.)
+* **server.py** : serves a local page where one can submit their **known_db** and have an evaluation over the total library. It comes with a table with basic sorting and filtering capabilities. (Check point 3. from before). In the repo, there are two titles as an example.
 ```
 python3 server.py
 ```
